@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age-Based Diet Recommendation System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Age-Based Diet Recommendation System</h1>
+      <p class="subtitle">Personalized food guidance for different age groups</p>
+
+      <label for="age">Enter Age</label>
+      <input type="number" id="age" placeholder="Example: 21" min="1" />
+
+      <label for="goal">Select Goal</label>
+      <select id="goal">
+        <option value="balanced">Balanced Diet</option>
+        <option value="weight-loss">Weight Loss</option>
+        <option value="weight-gain">Weight Gain</option>
+        <option value="active">Active Lifestyle</option>
+      </select>
+
+      <button onclick="generatePlan()">Get Diet Plan</button>
+
+      <div id="result" class="result"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
